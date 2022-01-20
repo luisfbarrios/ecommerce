@@ -12,7 +12,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class ProductoServiceImpl implements ProductoService{
 
-    @Autowired
+    @Autowired  
     private ProductoRepository productorepository;
 
     @Override
@@ -40,6 +40,12 @@ public class ProductoServiceImpl implements ProductoService{
 
     @Override
     public List<Producto> findAll() {
+        return productorepository.findAll();
+        
+    }
+
+    @Override
+    public Optional<Producto> findById(Integer id) {
         // TODO Auto-generated method stub
         return null;
     }
