@@ -113,12 +113,11 @@ public class Producto {
         this.usuario = usuario;
     }
 
-
-    @Override
-    public String toString() {
-        return "Producto [contidad=" + contidad + ", descripcion=" + descripcion + ", id=" + id + ", imagen=" + imagen
-                + ", nombre=" + nombre + ", precio=" + precio + "]";
-    }
+	@Override
+	public String toString() {
+		return "Producto [id=" + id + ", nombre=" + nombre + ", descripcion=" + descripcion + ", imagen=" + imagen
+				+ ", precio=" + precio + ", cantidad=" + contidad + "]";
+	}
 
     
     
