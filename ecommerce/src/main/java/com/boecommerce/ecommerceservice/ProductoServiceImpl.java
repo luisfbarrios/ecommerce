@@ -44,10 +44,6 @@ public class ProductoServiceImpl implements ProductoService{
         
     }
 
-    @Override
-    public Optional<Producto> findById(Integer id) {
-        // TODO Auto-generated method stub
-        return null;
-    }
+
     
 }
